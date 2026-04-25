@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+header {
+  background: black;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: rgb(117, 5, 20);
+  margin-bottom: 15px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: rgb(79, 6, 6);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: url("https://via.placeholder.com/1200x600") center/cover;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.hero h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: rgb(81, 10, 10);
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background: darkred;
+}
+
+.movies {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.movie-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background: #222;
+  width: 300px;
+  padding: 20px;
+  border-radius: 50px / 40%;
+  box-shadow: 0 4px 12px rgba(209, 10, 10, 0.4);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20% / 20%;
+}
+
+.card h3 {
+  margin: 15px 0;
+}
+
+button {
+  background: rgb(130, 4, 4);
+  color: rgb(249, 242, 242);
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(196, 5, 5);
+}
+
+.about {
+  background: #1a1a1a;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+footer {
+  background: rgb(82, 4, 4);
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h2 {
+    font-size: 35px;
+  }
+
+  .movie-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
